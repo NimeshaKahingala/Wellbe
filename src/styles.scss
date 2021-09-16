@@ -1,0 +1,432 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EAF3F9;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+  .container {
+    display: flex;
+    max-width: 1066px;
+    margin: auto;
+  //  padding: 35px 12px 20px 12px;
+
+    .nav-left-wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 145px;
+
+      
+      .logo-wrap {
+        flex: 1 0 8%;
+        text-align: center;
+
+        .logo-img {
+          height: 42px;
+        }
+      }
+    }
+
+    .nav-right-wrap {
+      flex: 0 0 5%;
+      text-align: right;
+    }
+
+    .menu-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 822px;
+      position: absolute;
+      top: 70px;
+    }
+
+    .menu {
+      background-color: white;
+      box-shadow: 0px 3px 10px #00000029;
+      border-radius: 5px;
+      display: none;
+      padding: 32px 39px 30px 30px;
+
+      .links {
+        &.mobile {
+          display: none;
+        }
+      }
+      .menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .menu-list-item {
+          cursor: pointer;
+          opacity: 0.6;
+
+          &.active {
+            opacity: 1;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+
+          a {
+            color: #072259;
+            font: normal normal normal 13px/42px Stoke;
+            text-decoration: none;
+
+            .nav-menu-img {
+              margin-right: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section {
+  padding: 100px 10px;
+}
+
+.section-welcome {
+  // background-color: #F8F8F8;
+  //padding: 180px 0px 45px 0px;
+  padding: 78px 12px;
+  padding-bottom: 0;
+
+  .container {
+    // max-width: 1066px;
+    // margin: auto;
+    max-width: unset;
+    padding: 0;
+
+    .btn-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+
+      .btn-submit {
+        background-color: #26BFAF;
+        border-color: #26BFAF;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        height: 45px;
+        width: 200px;
+
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+        }
+      }
+    }
+
+    .form-wrap {
+      margin: auto;
+      width: 60%;
+
+      .form-control:focus, .form-select:focus {
+        border: 1px solid #26BFAF;
+        box-shadow: 0 0 0 2px rgb(9 165 160 / 20%);
+      }
+
+      .form-floating { 
+        label {
+          font-size: 13px;
+          transform: scale(.85) translateY(-.2px) translateX(.15rem);
+        }
+
+        .form-control, .form-select{
+          font-size: 13px;
+          height: 45px;
+          padding-top: 16px;
+          
+          &:focus~label, &:not(:placeholder-shown)~label{
+            color: #25BEAE;
+            font-size: 9px;
+            font-weight: 600;
+            opacity: 1;
+            transform: scale(.85) translateY(-10px) translateX(.15rem)
+          }
+        }
+
+        .form-select~label {
+          color: #25BEAE;
+          font-size: 9px;
+          font-weight: 600;
+          opacity: 1;
+          transform: scale(.85) translateY(-10px) translateX(.15rem)
+        }
+
+        .form-select {
+          .ttest{
+            background-color: red;
+          }
+        }
+
+        textarea {
+          height: 120px !important;
+        }
+      }
+    }
+
+    .title-wrap {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 30px;
+
+      .icon {
+        margin-right: 15px;
+        width: 33px;
+      }
+    }
+
+    .main-banner {
+      background-image: url("./images/wellbe/rightsideImg.jpg");
+      background-size: cover;
+      height: calc(100vh - 78px);
+    }
+  }
+}
+ 
+
+/*  about us page */ 
+.section-aboutus {
+  padding-top: 150px;
+
+  .container {
+    // max-width: 1066px;
+    // margin: auto;
+    text-align: center;
+    max-width: unset;
+    padding: 0;
+
+    .main-banner {
+      background-image: url("./images/wellbe/rightsideImg.jpg");
+      background-size: cover;
+      height: 450px;
+    }
+
+    .content-wrap {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+
+      .btn-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        .btn-appointment {
+          background-color: #26BFAF;
+          border-color: #26BFAF;
+          border-radius: 5px;
+          font-size: 13px;
+          font-weight: 600;
+          height: 45px;
+          width: 248px;
+
+          &:focus {
+            box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+          }
+        }
+      }
+
+      .text-block {
+        font-size: 14px;
+        margin: auto;
+        width: 313px;
+
+        .bold-text {
+          font-weight: 600;
+        }
+      }
+
+      .title {
+        color: #072259;
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+.section-gallery {
+  background-color: #F9FBFC; 
+  padding: 150px 0 0 0;
+
+  .container {
+    margin-top: 40px;
+    max-width: none;
+    padding: 0;
+
+    .nav-tabs {
+      border: none;
+      margin-left: 50px;
+      
+      .nav-link {
+        background-color: #DFE7EB;
+        border: none;
+        font-size: 13px;
+        font-weight: 600;
+        color: #0F223C;
+        height: 50px;
+        margin: 0 2px;
+        width: 165px;
+
+        &.active {
+          background-color: white;
+        //  border-bottom: none;
+        }
+      }
+    }
+
+    .tab-content {
+      background-color: white;
+      margin-top: 25px;
+      padding-bottom: 40px;
+
+      .tab-pane {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+
+    .card {
+      box-shadow: 0px 0px 10px #0000000D;
+      border: 1px solid #DFE7EB;
+      border-radius: 5px;
+
+      .card-body {
+        padding: 20px 22px 25px 25px;
+
+        .card-top {
+          display: flex;
+          justify-content: space-between;
+
+          .created-date {
+            color: #00BFAF;
+            font-size: 10px;
+            font-weight: 600px;
+            text-transform: uppercase;
+          }
+
+          .app-number {
+            background-color: #F0FBFA;
+            border-radius: 3px;
+            border: none;
+            color: #00BFAF;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 5px 13px;
+          }
+        }
+
+        .card-text {
+          color: #B7BCC4;
+          font-size: 12px;
+
+          .details {
+            color: #0F223C;
+          }
+        }
+
+        .name {
+          color: #0F223C;
+          font-size: 13px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 100px;
+
+    .icon {
+      margin-right: 15px;
+      width: 33px;
+    }
+  }
+}
+
+.section-login {
+  background-image: url("./images/wellbe/bannerImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  .login-wrap {
+    border: 1px solid #DFE7EB;
+    border-radius: 5px;
+    margin: auto;
+    width: 380px;
+
+    .header {
+      align-items: center;
+      background-color: white;
+      display: flex;
+      height: 112px;
+      justify-content: center;
+    }
+
+    .content {
+      background-color: #F9FBFC;
+      border-top: 1px solid #DFE7EB;
+      padding: 30px 50px 50px 50px;
+
+      .title {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .btn-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+  
+        .btn-login {
+          background-color: #26BFAF;
+          border-color: #26BFAF;
+          border-radius: 5px;
+          font-size: 13px;
+          font-weight: 600;
+          height: 45px;
+          width: 120px;
+  
+          &:focus {
+            box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* mobile */
+// @media screen and (max-width: 760px) {
+
+//   }
+
+
+
+/* tablet-portrait */
+// @media screen and (min-width: 768px) and (max-width: 992px){
+
+// }
+
+/* tablet-landscape */
+// @media screen and (min-width: 992px) and (max-width: 1024px){
+
+// }
