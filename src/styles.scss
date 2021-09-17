@@ -93,7 +93,7 @@ body {
   padding: 100px 10px;
 }
 
-.section-welcome {
+.section-create-appoinment {
   // background-color: #F8F8F8;
   //padding: 180px 0px 45px 0px;
   padding: 78px 12px;
@@ -194,8 +194,8 @@ body {
 }
  
 
-/*  about us page */ 
-.section-aboutus {
+/*  thankyou page */ 
+.section-thankyou {
   padding-top: 150px;
 
   .container {
@@ -257,7 +257,7 @@ body {
 }
 
 
-.section-gallery {
+.section-cancellations {
   background-color: #F9FBFC; 
   padding: 150px 0 0 0;
 
@@ -346,14 +346,38 @@ body {
     }
   }
 
-  .title {
-    font-size: 30px;
-    font-weight: 800;
-    margin: 0 100px;
+  .header {
+    display: flex;
+    // justify-content: space-between;
+    margin: auto;
+    width: 94%;
 
-    .icon {
-      margin-right: 15px;
-      width: 33px;
+    .date-wrap{
+      align-items: center;
+      display: flex;
+      margin-right: 20px;
+      
+      .text {
+        color: #0F223C;
+        font-size: 13;
+        font-weight: 400;
+        margin-right: 15px;
+      }
+    }
+
+    .search-wrap {
+
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: 800;
+      margin: 0 100px;
+  
+      .icon {
+        margin-right: 15px;
+        width: 33px;
+      }
     }
   }
 }
