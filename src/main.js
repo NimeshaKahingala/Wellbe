@@ -1,8 +1,20 @@
 document.getElementById("login").onclick = function () {
-  window.location.href = "./form.html";
-  console.log("aaaaaaaaaa")
+  window.location.href = "./createappoinment.html";
 };
 
+// document.getElementById("appointmentSubmit").onclick = function () {
+//   window.location.href = "./thankyou.html";
+//   console.log("aaaaaaaaafjafa")
+// };
+
+// document.getElementById("createAppoinment").onclick = function () {
+//   window.location.href = "./cancellations.html";
+//   console.log("afdgdsssssssa")
+// };
+
+$('.datepicker').datepicker({
+  startDate: '-3d'
+});
 
 
 $(function () {
@@ -59,7 +71,3 @@ $(function () {
   });
 
 });
-
-function myFunction() {
-  document.getElementById("").innerHTML = "Hello World";
-}
