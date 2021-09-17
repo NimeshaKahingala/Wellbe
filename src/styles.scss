@@ -105,6 +105,10 @@ body {
     max-width: unset;
     padding: 0;
 
+    .left {
+      display: flex;
+    }
+
     .btn-wrap {
       display: flex;
       justify-content: center;
@@ -348,7 +352,7 @@ body {
 
   .header {
     display: flex;
-    // justify-content: space-between;
+    justify-content: flex-end;
     margin: auto;
     width: 94%;
 
@@ -366,12 +370,35 @@ body {
     }
 
     .search-wrap {
+    }
 
+    .form-floating {
+      width: 293px;
+
+      label {
+        font-size: 13px;
+        transform: scale(.85) translateY(-.2px) translateX(.15rem);
+      }
+
+      .form-control, .form-select{
+        font-size: 13px;
+        height: 45px;
+        padding-top: 16px;
+        
+        &:focus~label, &:not(:placeholder-shown)~label{
+          color: #25BEAE;
+          font-size: 9px;
+          font-weight: 600;
+          opacity: 1;
+          transform: scale(.85) translateY(-10px) translateX(.15rem)
+        }
+      }
     }
 
     .title {
       font-size: 30px;
       font-weight: 800;
+      flex: 1;
       margin: 0 100px;
   
       .icon {
