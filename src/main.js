@@ -13,15 +13,15 @@ $(document).ready(function () {
     window.location.href = "thankyou.html";
   });
 
+  $(".datepicker1").datepicker({
+    todayHighlight: true,
+    title: "Date of Birth",
+  });
 
-  $(".datepicker1").datepicker({todayHighlight : true, title: 'Date of Birth'});
+  $(".input-daterange").datepicker({ todayHighlight: true });
 
-  $('.input-daterange').datepicker({todayHighlight : true});
-
-  $('.input-group.date').datepicker({});
+  $(".input-group.date").datepicker({});
 });
-
-
 
 $(function () {
   "use strict";
