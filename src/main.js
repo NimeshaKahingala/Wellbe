@@ -25,12 +25,38 @@ $(document).ready(function () {
 
   $(".date-of-birth").datepicker({
     todayHighlight: true,
+    format: "dd/M/yyyy",
+    clearBtn: true,
   });
 
   $(".input-daterange").datepicker({ todayHighlight: true });
 
   $(".input-group.date").datepicker({});
 });
+
+$('#date').datepicker({
+  format: "dd/M/yyyy",
+  startView: 1,
+  minViewMode: 0,
+  maxViewMode: 0,
+  multidate: true,
+  multidateSeparator: "   🡲   ",
+  autoClose:true,
+  clearBtn: true,
+}).on("changeDate",function(event){
+    var dates = event.dates, elem=$('#date');
+    if(elem.data("selecteddates")==dates.join(",")) return; //To prevernt recursive call, that lead to lead the maximum stack in the browser.
+    if(dates.length>2) dates=dates.splice(dates.length-1);
+    dates.sort(function(a,b){return new Date(a).getTime()-new Date(b).getTime()});
+    elem.data("selecteddates",dates.join(",")).datepicker('setDates',dates);
+});
+
+function getDates()
+{
+  // console.log($("#date").datepicker("getDates"));
+  console.log($("#date").datepicker("getUTCDates"));
+  console.log($("#date").data('datepicker').getFormattedDate('yyyy/mm/dd'));
+}
 
 $(function () {
   "use strict";
