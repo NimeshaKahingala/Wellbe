@@ -23,7 +23,7 @@
 
 <body class="home">
   <div id="navBar" class="navbar navbar-light navbar-expand-lg fixed-top">
-    <div id="navbarSupportedContent" class="container collapse navbar-collapse">
+    <div id="navbarSupportedContent" class="navbar-wrap">
       <div class="nav-left-wrap">
         <div class="logo-wrap"><a href="./index.html">
             <img id="logo" src="./images/wellbe/WellBeLogo.svg" alt="logo" class="logo-img" /></a>
@@ -43,8 +43,7 @@
       <div class="menu-wrap">
         <div id="menu" class="menu">
           <ul class="menu-list">
-            <li class="menu-list-item"><a href="./thankyou.html">ABOUT US</a></li>
-            <li class="menu-list-item"><a href="./index.html">login</a></li>
+            <li class="menu-list-item" id="logout"><img src="./images/wellbe/logoutIcon.svg" class="icon"/>Log out</li>
           </ul>
         </div>
       </div>
@@ -59,83 +58,52 @@
           <form class="row g-3 form-wrap">
             <div class="title-wrap"><img class="icon" src="./images/wellbe/appoinmentIcon.svg" />Create Appointment
             </div>
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
-                <label for="floatingInput">First Name</label>
+            <div class="col-md-6 input-field">
+              <label for="exampleFormControlInput1" class="form-label">FIRST NAME</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="col-md-6 input-field">
+              <label for="exampleFormControlInput1" class="form-label">LAST NAME</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="col-md-6 mb-3 input-field">
+              <label for="exampleFormControlInput1" class="form-label">DATE OF BIRTH</label>
+              <div class="input-group date">
+                <input autocomplete="off" class="datepicker1 form-control" id="exampleFormControlInput1" data-date-format="dd/M/yyyy">
+                <span class="input-group-addon">
+                  <img src="./images/wellbe/calendarIcon.svg" class="calendar-icon"/>
+                </span>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Last Name">
-                <label for="floatingInput">Last Name</label>
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <!-- <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Date of Birth">
-                <label for="floatingInput">Date of Birth</label>
-              </div> -->
-              <input autocomplete="off" class="datepicker1 form-control" id="floatingInput"
-                data-date-format="mm/dd/yyyy" placeholder="Date of Birth">
-            </div>
-            <div class="col-md-6 mb-3">
-              <div class="input-daterange input-group form-floating" id="datepicker">
-                <input autocomplete="off" type="text" class="input-sm form-control" data-date-format="mm/dd/yyyy"
-                  name="start" />
-                <span class="input-group-addon">to</span>
-                <input autocomplete="off" type="text" class="input-sm form-control" data-date-format="mm/dd/yyyy"
-                  name="end" />
-              </div>
-
-              <!-- How to add a Icon -->
-              <!-- <div class="input-group date">
-              <input type="text" class="form-control">
-              <span class="input-group-addon">
-                <i class="glyphicon glyphicon-th"></i>
-              </span>
-            </div> -->
-
+            <div class="col-md-6 mb-3 input-field">
+              <label for="exampleFormControlInput1" class="form-label">APPOINTMENT SESSION</label>
+              <select class="form-select" id="floatingSelect">
+                <!-- <option selected>Appointment Session</option> -->
+                <option class="test" value="1">1st Appointment</option>
+                <option value="2">2nd Appointment</option>
+                <option value="3">3rd Appointment</option>
+              </select>             
             </div>
 
-
-
-            <div class="col-md-6 mb-3">
-              <div class="form-floating">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>Appointment Session</option>
-                  <option class="ttest" value="1">1st Appointment</option>
-                  <option value="2">2nd Appointment</option>
-                  <option value="3">3rd Appointment</option>
-                </select>
-                <label for="floatingSelect">Appointment Session</label>
-              </div>
+            <div class="col-md-6 input-field">
+              <label for="exampleFormControlInput1" class="form-label">PRACTITIONER FIRST NAME</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
             </div>
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Practitioner First Name">
-                <label for="floatingInput">Practitioner First Name</label>
-              </div>
+            <div class="col-md-6 input-field">
+              <label for="exampleFormControlInput1" class="form-label">PRACTITIONER LAST NAME</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
             </div>
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Practitioner Last Name">
-                <label for="floatingInput">Practitioner Last Name</label>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Notes</label>
-              </div>
-            </div>
+            <div class="col-12 input-field">
+              <label for="exampleFormControlTextarea1" class="form-label">NOTES</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>  
             <div class="col-12 btn-wrap">
               <button id="appointmentSubmit" type="submit" class="btn btn-primary btn-submit">SUBMIT</button>
             </div>
           </form>
         </div>
 
-        <div class="col-md-4 m-0 p-0">
+        <div class="col-md-4 m-0 p-0 right">
           <div class="main-banner"></div>
         </div>
       </div>

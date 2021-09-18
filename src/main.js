@@ -13,6 +13,16 @@ $(document).ready(function () {
     window.location.href = "thankyou.html";
   });
 
+  $("#createAppoinment").click(function (e) {
+    e.preventDefault();
+    window.location.href = "createappoinment.html";
+  });
+
+  $("#logout").click(function (e) {
+    e.preventDefault();
+    window.location.href = "index.html";
+  });
+
   $(".datepicker1").datepicker({
     todayHighlight: true,
     title: "Date of Birth",
@@ -27,7 +37,7 @@ $(function () {
   "use strict";
   $(".menu").hide();
   $(".navbar").removeClass("shadow-sm");
-  $(".navbar-brand").css("display", "block");
+  // $(".navbar-brand").css("display", "block");
 
   $(".hamburger-menu-wrapper").click(function (e) {
     e.preventDefault();
