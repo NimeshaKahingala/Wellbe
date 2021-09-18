@@ -23,9 +23,8 @@ $(document).ready(function () {
     window.location.href = "index.html";
   });
 
-  $(".datepicker1").datepicker({
+  $(".date-of-birth").datepicker({
     todayHighlight: true,
-    title: "Date of Birth",
   });
 
   $(".input-daterange").datepicker({ todayHighlight: true });
@@ -37,7 +36,6 @@ $(function () {
   "use strict";
   $(".menu").hide();
   $(".navbar").removeClass("shadow-sm");
-  // $(".navbar-brand").css("display", "block");
 
   $(".hamburger-menu-wrapper").click(function (e) {
     e.preventDefault();
@@ -53,10 +51,6 @@ $(function () {
       $(this).addClass("active");
     }
   });
-
-  // if (on_index == "home") {
-  //     $('.navbar-brand').hide();
-  // }
 
   const $menu = $(".navbar");
 

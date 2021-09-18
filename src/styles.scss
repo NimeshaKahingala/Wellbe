@@ -19,7 +19,6 @@ body {
     margin: auto;
     padding: 0;
     width: 86%;
-    //  padding: 35px 12px 20px 12px;
 
     .nav-left-wrap {
       display: flex;
@@ -122,14 +121,10 @@ body {
 }
 
 .section-create-appoinment {
-  // background-color: #F8F8F8;
-  //padding: 180px 0px 45px 0px;
   padding: 78px 12px;
   padding-bottom: 0;
 
   .container {
-    // max-width: 1066px;
-    // margin: auto;
     max-width: unset;
     padding: 0;
 
@@ -210,7 +205,6 @@ body {
         border-radius: 5px !important;
         font-size: 13px;
         height: 45px;
-       // padding-top: 16px;
       }
 
       .input-group-addon {
@@ -289,6 +283,18 @@ body {
           }
         }
       }
+
+      // .year {
+      //   &.active, &.focused {
+      //     background-color: #26BFAF;
+      //     border-color: #26BFAF;
+
+      //     &:hover {
+      //       background-color: #26BFAF;
+      //       border-color: #26BFAF;
+      //     }
+      //   }
+      // }
     }
   }
 }
@@ -299,8 +305,6 @@ body {
   padding-bottom: 0;
 
   .container {
-    // max-width: 1066px;
-    // margin: auto;
     text-align: center;
     max-width: unset;
     padding: 0;
@@ -392,7 +396,6 @@ body {
 
         &.active {
           background-color: white;
-          //  border-bottom: none;
         }
       }
     }
@@ -408,6 +411,10 @@ body {
         padding-left: 50px;
         padding-right: 50px;
         width: 93%;
+
+        .row {
+          padding-top: 16px;
+        }
       }
     }
 
@@ -474,11 +481,39 @@ body {
       display: flex;
       margin-right: 20px;
 
+      .input-daterange {
+        .form-control {
+          font-size: 13px;
+          height: 45px;
+          text-align: left;
+          width: 270px;
+
+          &:focus {
+            border: 1px solid #26BFAF;
+            box-shadow: 0 0 0 2px rgb(9 165 160 / 20%);
+          }
+        }
+      }
+
+      .input-group-addon {
+        align-items: center;
+        display: flex;
+        margin-left: -15px !important;
+        position: relative;
+        right: 20px;
+
+        .calendar-icon {
+          height: 14px;
+          width: 14px;
+        }
+      }
+
       .text {
         color: #0F223C;
         font-size: 13;
         font-weight: 400;
         margin-right: 15px;
+        width: 106px;
       }
     }
 
@@ -491,6 +526,7 @@ body {
           font-size: 13px;
           height: 45px;
           padding-left: 34px;
+          width: 285px;
 
           &:focus {
             border: 1px solid #26BFAF;
@@ -505,21 +541,6 @@ body {
         .search-icon {
           position: relative;
           margin-right: -30px;
-        }
-      }
-    }
-
-    .date-wrap {
-      .input-daterange {
-        .form-control {
-          color: #DFE7EB;
-          font-size: 13px;
-          height: 45px;
-
-          &:focus {
-            border: 1px solid #26BFAF;
-            box-shadow: 0 0 0 2px rgb(9 165 160 / 20%);
-          }
         }
       }
     }
@@ -674,7 +695,7 @@ body {
       display: none;
     }
   }
-  
+
   .section-thankyou {
     .content-wrap {
       width: 100%;
@@ -682,6 +703,14 @@ body {
 
     .right {
       display: none;
+    }
+  }
+
+  .section-cancellations {
+    .tab-pane  {
+      .col-sm-4 {
+        width: 50%;
+      }
     }
   }
 }

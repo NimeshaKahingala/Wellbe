@@ -56,12 +56,18 @@
       <div class="title"><img class="icon" src="./images/wellbe/calendarTickIcon.svg" />Appointments</div>
       <div class="date-wrap">
         <div class="text">Sort Date by</div>  
-        <div class="input-daterange input-group form-floating" id="datepicker">
+        <!-- <div class="input-daterange input-group form-floating" id="datepicker">
           <input autocomplete="off" type="text" class="input-sm form-control" data-date-format="dd/M/yyyy"
             name="start" />
           <span class="input-group-addon">to</span>
           <input autocomplete="off" type="text" class="input-sm form-control" data-date-format="dd/M/yyyy"
             name="end" />
+        </div> -->
+        <div class="input-group date input-daterange">
+          <input autocomplete="off" class="datepicker1 form-control" id="exampleFormControlInput1" data-date-format="dd/M/yyyy">
+          <span class="input-group-addon">
+            <img src="./images/wellbe/calendarIcon.svg" class="calendar-icon"/>
+          </span>
         </div>
       </div>
       <div class="search-wrap">
